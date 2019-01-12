@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my_pfe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="app.css"> -->
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4"><a href="/">Piezo Institute</a></h1>
+        <h4>The European Institute of Piezoelectric Materials and Devices</h4>
+        <hr class="my-4">
+        <p class="lead">This is a simple tool, help with experiences with piezoelectric materials like bar, plate, disk and ring</p>
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+    <div class="container"
+        <p>
+            A representation of the geometry is available below:
+        </p>
+        <img src="{% static "figures/ring.png" %}" alt="">
+        <p>For the theoretical study of the impedance of this geometry, we used the information presented in the work of Michel Brissaud, which allowed us to use the following equation:</p>
+        <img src="{% static "figures/formula_ring_0.png" %}" alt="">
+        <p>With:</p>
+        <img src="{% static "figures/formula_ring_1.png" %}" alt="">
+        <p>And:</p>
+        <img src="{% static "figures/formula_ring_2.png" %}" alt="">
+        <img src="{% static "figures/formula_ring_3.png" %}" alt="">
+        <img src="{% static "figures/formula_ring_4.png" %}" alt="">
+        <p>To trace the evolution of the impedance of this geometry, simply proceed as before:</p>
+        <img src="{% static "figures/formula_ring_5.png" %}" alt="">
+        <p>It is possible to notice that when the internal radius decreases to become null, the expressions corresponding to the study of the ring become those obtained previously for the study of the full disk.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
